@@ -1,5 +1,7 @@
 ---
+import "../styles/global.css";
 
+const titulo = "Pagina de inicio de Killa Tech en proceso de desarrollo...";
 ---
 
 <html lang="en">
@@ -11,7 +13,16 @@
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-slate-900 text-white flex items-center justify-center min-h-screen">
+		<div
+			class="p-8 bg-slate-800 rounded-xl shadow-lg border border-slate-700"
+		>
+			<h1 class="text-3xl font-bold text-sky-400 bg-slate-200 p-4 rounded-lg mb-4">
+				{titulo}
+			</h1>
+			<p class="text-slate-400">
+				Instalación y configuración completada con éxito.
+			</p>
+		</div>
 	</body>
 </html>
