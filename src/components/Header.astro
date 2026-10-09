@@ -1,5 +1,6 @@
 ---
 import "../styles/header.css";
+import GithubIcon from "./icons/GitHub.astro";
 ---
 
 		<header class="site-header">
@@ -11,7 +12,7 @@ import "../styles/header.css";
 				<a class="header-cta" href="#fundadores">Fundadores</a>
 				<a class="header-cta" href="#footer">Contactos</a>
 				<a class="header-cta" href="https://github.com/Killa-Tech" aria-label="Killa Tech en GitHub">
-					<img src="/github_logo.png" alt="GitHub" width="32" height="32" />
+					<div><GithubIcon size={28}/></div>
 				</a>
 			</nav>
 			
@@ -20,9 +21,7 @@ import "../styles/header.css";
 				<a href="#proyectos">Proyectos</a>
 				<a href="#fundadores">Fundadores</a>
 				<a href="#footer">Contactos</a>
-				<a href="https://github.com/Killa-Tech" aria-label="Killa Tech en GitHub">
-					<img src="/github_logo.png" alt="GitHub" width="32" height="32" />
-				</a>
+				<div style="display: flex; margin-top: 10px;"><GithubIcon size={20}/><a href="https://github.com/Killa-Tech" aria-label="Killa Tech en GitHub"></a>GitHub</div>
 			</nav>
 		</header>
 
